@@ -1,5 +1,9 @@
 # 🖥️ ZinkxDeck - Geliştiriciler İçin Hızlı Yardımcı Araç Kutusu
 
+<p align="center">
+  <img src="assets/logo.png" width="160" alt="ZinkxDeck Logo" />
+</p>
+
 **ZinkxDeck**, macOS işletim sistemi için özel olarak tasarlanmış, geliştiricilerin günlük iş akışlarında en sık kullandığı biçimlendirme, şifreleme ve yardımcı araçları tek bir şık ve yerel (local) arayüzde toplayan premium bir masaüstü uygulamasıdır.
 
 [English Description Below](#english)
@@ -64,6 +68,10 @@ npm run build
 <a id="english"></a>
 
 # 🖥️ ZinkxDeck - Developer Utility Toolbox for macOS
+
+<p align="center">
+  <img src="assets/logo.png" width="160" alt="ZinkxDeck Logo" />
+</p>
 
 **ZinkxDeck** is a premium, offline-first desktop application designed specifically for macOS, consolidating formatting, encoding, cryptography, and playground utilities into a beautiful, native client.
 
