@@ -155,8 +155,8 @@ export default function App() {
       {/* Sidebar navigation */}
       <aside className="sidebar">
         <div className="logo-section">
-          <div className="logo-icon">
-            <Cpu size={18} />
+          <div className="logo-icon" style={{ background: 'none', boxShadow: 'none' }}>
+            <img src="logo.png" style={{ width: '32px', height: '32px', borderRadius: '6px' }} alt="ZinkxDeck Logo" />
           </div>
           <span className="logo-title">ZinkxDeck</span>
         </div>
