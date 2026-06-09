@@ -7,3 +7,5 @@ dist/
 out/
 build/
 package-lock.json
+dist-desktop/
+*.yml

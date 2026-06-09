@@ -48,9 +48,9 @@
 
 ---
 
-## 🚀 Kurulum ve Çalıştırma
+## 🚀 Kurulum, Çalıştırma ve Paketleme
 
-Projeyi yerel makinenizde çalıştırmak için Node.js yüklü olmalıdır.
+Projeyi yerel makinenizde çalıştırmak ve derlemek için Node.js yüklü olmalıdır.
 
 ```bash
 # Bağımlılıkları yükleyin
@@ -59,8 +59,8 @@ npm install
 # Uygulamayı geliştirme modunda başlatın (Vite dev server + Electron)
 npm start
 
-# Üretim (production) sürümünü derleyin
-npm run build
+# Bağımsız macOS uygulamasını paketleyin (.app ve .dmg oluşturur)
+npm run package
 ```
 
 ---
@@ -99,7 +99,7 @@ npm run build
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 How to Run & Package
 
 Ensure you have Node.js installed.
 
@@ -110,8 +110,8 @@ npm install
 # Run Vite dev server and launch Electron window
 npm start
 
-# Build compiled files for distribution
-npm run build
+# Package the application for macOS (.app and installer .dmg)
+npm run package
 ```
 
 ---

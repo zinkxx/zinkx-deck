@@ -2,24 +2,46 @@
   "name": "zinkxdeck",
   "version": "1.0.0",
   "description": "ZinkxDeck developer utility toolkit for macOS",
-
   "main": "main.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\""
+    "start": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "package": "npm run build && electron-builder --mac"
   },
   "dependencies": {
+    "lucide-react": "^0.400.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "lucide-react": "^0.400.0",
     "sql-formatter": "^15.4.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
     "concurrently": "^8.2.2",
     "electron": "^31.0.1",
+    "electron-builder": "^26.15.2",
     "vite": "^5.3.1",
     "wait-on": "^7.2.0"
+  },
+  "build": {
+    "appId": "com.zinkx.zinkxdeck",
+    "productName": "ZinkxDeck",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "icon": "logo.png"
+    },
+    "files": [
+      "dist/**/*",
+      "main.js",
+      "preload.js",
+      "logo.png"
+    ],
+    "directories": {
+      "output": "dist-desktop"
+    }
   }
 }
